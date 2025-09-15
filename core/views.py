@@ -5,4 +5,9 @@ def home(request):
     return render(request, "home.html", {"title": "Home"})
 
 def about(request):
-    return render(request, "about.html", {"title": "About"})
+    data = {
+        "title": "About",
+        "name": "James Emmanuel P. Fernandez",
+        "student_id": "2020-10067",
+    }
+    return render(request, "about.html", data)
